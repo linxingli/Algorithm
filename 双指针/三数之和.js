@@ -1,4 +1,5 @@
-/** 三数字之和为0的三元组
+/** 
+ * 【三数字之和为0的三元组】
  * @param {number[]} nums
  * @return {number[][]}
  */
@@ -33,11 +34,13 @@ var threeNum = (nums) => {
             }
         }
     }
+    console.log('threeNum', res)
     return res
 }
 threeNum([-1, 0, 1, 2, 1, 2, -1, -1, 1 - 4])
 
 /**
+ * 【最近的三数之和】
  * 题目描述:
  * 给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，
  * 使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。
@@ -73,6 +76,7 @@ var threeSumClosest = (nums, target) => {
             }
         }
     }
+    console.log('threeSumClosest', res)
     return res
 }
 threeSumClosest([-1, 2, 1, -4], 1)
